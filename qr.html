@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./qr.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+
+
+</head>
+
+<body>
+
+    <div id="main">
+        <h1 class="main-head">Sign Up Form</h1>
+        <form action="">
+            <div class="first">
+                <div class="label-div">
+                    <label for="Username">Username:</label>
+                </div>
+                <div class="for-in">
+                    <input type="text" id="Username" placeholder="Your username" required>
+                </div>
+                <span class="inst">
+                    <li>Username must be 6 characters long.</li>
+                    <li>Username must contain both numbers and letters.</li>
+                    <li>Username can be written in both uppercase and lowercase letters.</li>
+                </span>
+            </div>
+
+
+            <div class="second">
+                <div class="label-div">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="for-in" tabindex="-1">
+                    <input type="email" id="email" placeholder="Your email" required>
+                </div>
+                <span class="inst">
+                    <li>Use only alphanumeric characters.</li>
+                    <li>Email should not contain spaces.</li>
+                    <li>Special characters as first character are not allowed.</li>
+                </span>
+            </div>
+
+
+            <div class="third">
+                <div class="label-div">
+                    <label for="password">Password:</label>
+                </div>
+                <div class="for-in">
+                    <input type="password" id="password" class="sec" placeholder="Your password" required>
+                    <i class="fa-solid fa-eye" id="pass"></i>
+                </div>
+                <span class="inst">
+                    <li>Password must be 8 characters long.</li>
+                    <li>Password should not contain spaces.</li>
+                    <li>Password should be strong.</li>
+                </span>
+            </div>
+            <button id="btn">Sign Up</button>
+
+            <span class="for-log">Already have an account? <a href="#" class="log-page">Log In</a></span>
+        </form>
+    </div>
+
+    <script src="./qr.js"></script>
+    <script src="https://kit.fontawesome.com/3e4520222c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
